@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+          
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+           
+        }
+        .form-box {
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+           margin-left:20px;
+        }
+        .message-box {
+            display: none;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #4cAF50;
+            color: white;
+            text-align: center;
+            border-radius: 5px;
+        }
+        .org{
+          background-color:#ff5722 ;
+    color:black;
+    padding: 10px;
+    box-shadow:0 15px 15px rgba(0,0,0,0.3);
+    text-align: center;
+    width:100%;
+    padding-bottom:20px;
+    display:;
+        }
+    </style>
+</head>
+<body>
+    <center>
+<div class="org">
+<h1>Eventure </h1>
+    <h5>Event Managment | Tech news | Mentor guidence</h5>
+    <p>Enpowering your developers to level up thier skills through in softrware developers technologies</p>
+    </center><br><br><hr><br>
+  </div>
+    <center><div class="form-box">
+        <h2>Register</h2>
+        <form id="registerForm">
+            <table>  </table>
+                    <label for="name">Name:</label></td><input type="text" placeholder="Enter your name" id="name" name="name" required><br><br>
+                  
+         <tr>
+          <td>Gender:</td><td><input type="radio" name="gender">male<input type="radio" name="gender"> female</td>
+        </tr><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" placeholder="Enter your email" id="email" name="email" required><br><br>
+        
+        <tr>
+          <td>Phone no. :</td><td><input type="text" placeholder="Enter your mobile number"></td>
+        </tr><br><br>
+
+         <tr>
+          <td>Event:</td>
+          <td>
+          <select>
+            <option>Coding contest</option>
+            <option>Hackathon</option>
+            <option>Appxlr8</option>
+            <option>Symposium</option>
+            <option>Workshop</option>
+            <option>Tech Talk</option>
+            <option>Quiz</option>
+            <option>Tech fest</option>
+            <option>Event club</option>
+            <option>Enterprenur ship</option>
+      
+            
+          </select><br><br>
+      
+
+            <button type="submit">Submit</button>
+           
+            
+        </form>
+        <div class="message-box" id="successMessage">
+            Registered Successfully!
+        </div> 
+    </div><br><br>  <center><a href="index.html">Home</a></center><br><hr>
+  </center>
+  <center>
+  
+    <script>
+
+        const form = document.getElementById('registerForm');
+        const successMessage = document.getElementById('successMessage');
+
+ 
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+
+     
+            successMessage.style.display = 'block';
+
+           
+            form.reset();
+        });
+    </script>
+   
+</body>
+</html>
